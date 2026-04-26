@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sankar Vegetable Store</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body style="font-family:sans-serif; text-align:center;">
+
+<h1>🛒 Sankar Vegetable Store</h1>
+<p>📍 Location: Ambari</p>
+<p>🚚 Delivery Charge: ₹50</p>
+
+<h2>🥦 Available Vegetables</h2>
+
+<p>🍅 Tomato - ₹30/kg</p>
+<p>🥔 Potato - ₹25/kg</p>
+<p>🧅 Onion - ₹35/kg</p>
+
+<br>
+
+<button onclick="order()">📲 Order on WhatsApp</button>
+
+<script>
+function order(){
+let msg = "🛒 Sankar Vegetable Store%0A%0AOrder:%0ATomato%0APotato%0AOnion%0A%0ALocation: Ambari%0ADelivery: ₹50";
+window.open("https://wa.me/918101925969?text="+msg);
+}
+</script>
+
+</body>
+</html>

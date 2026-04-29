@@ -21,12 +21,208 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 
 const products = [
-  { id: 1, name: "টমেটো", category: "পাতাজাতীয়", price: 30, unit: "কেজি", rating: 4.8, fresh: "আজই তোলা", image: "https://images.unsplash.com/photo-1546094096-0df4bcaaa337" },
-  { id: 2, name: "আলু", category: "মূলজাতীয়", price: 25, unit: "কেজি", rating: 4.7, fresh: "ফার্ম ফ্রেশ", image: "https://images.unsplash.com/photo-1582515073490-dc1a3e0c7b1d" },
-  { id: 3, name: "পেঁয়াজ", category: "মূলজাতীয়", price: 35, unit: "কেজি", rating: 4.6, fresh: "নতুন স্টক", image: "https://images.unsplash.com/photo-1587049633312-d628ae50a8ae" },
-  { id: 4, name: "গাজর", category: "মূলজাতীয়", price: 40, unit: "কেজি", rating: 4.9, fresh: "অর্গানিক", image: "https://images.unsplash.com/photo-1582515073490-dc1a3e0c7b1d" },
-  { id: 5, name: "শসা", category: "পাতাজাতীয়", price: 30, unit: "কেজি", rating: 4.5, fresh: "কোল্ড স্টোরেজ", image: "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce" },
-  { id: 6, name: "বেগুন", category: "ফলজাতীয়", price: 35, unit: "কেজি", rating: 4.6, fresh: "প্রিমিয়াম", image: "https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2" }
+  const products = [
+{
+    id: 1,
+    name: "টমেটো",
+    category: "পাতাজাতীয়",
+    price: 30,
+    unit: "কেজি",
+    rating: 4.8,
+    fresh: "আজকের তাজা",
+    image: "https://images.unsplash.com/photo-1546094096-0df4bcaaa337"
+  },
+  {
+    id: 2,
+    name: "আলু",
+    category: "মূলজাতীয়",
+    price: 25,
+    unit: "কেজি",
+    rating: 4.7,
+    fresh: "ফার্ম ফ্রেশ",
+    image: "https://images.unsplash.com/photo-1518977676601-b53f82aba655"
+  },
+  {
+    id: 3,
+    name: "পেঁয়াজ",
+    category: "মূলজাতীয়",
+    price: 35,
+    unit: "কেজি",
+    rating: 4.6,
+    fresh: "নতুন স্টক",
+    image: "https://images.unsplash.com/photo-1508747703725-719777637510"
+  },
+  {
+    id: 4,
+    name: "গাজর",
+    category: "মূলজাতীয়",
+    price: 40,
+    unit: "কেজি",
+    rating: 4.9,
+    fresh: "অর্গানিক",
+    image: "https://images.unsplash.com/photo-1447175008436-054170c2e979"
+  },
+  {
+    id: 5,
+    name: "শসা",
+    category: "পাতাজাতীয়",
+    price: 30,
+    unit: "কেজি",
+    rating: 4.5,
+    fresh: "কোল্ড স্টোরেজ",
+    image: "https://images.unsplash.com/photo-1604977042946-1eecc30f269e"
+  },
+  {
+    id: 6,
+    name: "বেগুন",
+    category: "ফলজাতীয়",
+    price: 35,
+    unit: "কেজি",
+    rating: 4.6,
+    fresh: "প্রিমিয়াম কোয়ালিটি",
+    image: "https://images.unsplash.com/photo-1603048719539-9ecb4ae5f8ff"
+  },
+  {
+    id: 7,
+    name: "লাউ",
+    category: "ফলজাতীয়",
+    price: 45,
+    unit: "পিস",
+    rating: 4.5,
+    fresh: "গ্রাম থেকে আনা",
+    image: "https://images.unsplash.com/photo-1571575173700-afb9492e6a50"
+  },
+  {
+    id: 8,
+    name: "কুমড়ো",
+    category: "ফলজাতীয়",
+    price: 60,
+    unit: "পিস",
+    rating: 4.7,
+    fresh: "বড় সাইজ",
+    image: "https://images.unsplash.com/photo-1502741338009-cac2772e18bc"
+  },
+  {
+    id: 9,
+    name: "ঢেঁড়স",
+    category: "ফলজাতীয়",
+    price: 50,
+    unit: "কেজি",
+    rating: 4.4,
+    fresh: "সবুজ তাজা",
+    image: "https://images.unsplash.com/photo-1598515214211-89d3c73ae83b"
+  },
+  {
+    id: 10,
+    name: "পটল",
+    category: "ফলজাতীয়",
+    price: 55,
+    unit: "কেজি",
+    rating: 4.3,
+    fresh: "লোকাল বাজার",
+    image: "https://images.unsplash.com/photo-1518977956812-cd3dbadaaf31"
+  },
+  {
+    id: 11,
+    name: "করলা",
+    category: "ফলজাতীয়",
+    price: 45,
+    unit: "কেজি",
+    rating: 4.2,
+    fresh: "তাজা সবজি",
+    image: "https://images.unsplash.com/photo-1628773822503-930a7eaecf80"
+  },
+  {
+    id: 12,
+    name: "চিচিঙ্গা",
+    category: "ফলজাতীয়",
+    price: 40,
+    unit: "কেজি",
+    rating: 4.1,
+    fresh: "ফার্ম ফ্রেশ",
+    image: "https://images.unsplash.com/photo-1622205313162-be1d5712a43d"
+  },
+  {
+    id: 13,
+    name: "ঝিঙে",
+    category: "ফলজাতীয়",
+    price: 38,
+    unit: "কেজি",
+    rating: 4.4,
+    fresh: "আজকের স্টক",
+    image: "https://images.unsplash.com/photo-1598170845058-32b9d6a5da37"
+  },
+  {
+    id: 14,
+    name: "বরবটি",
+    category: "পাতাজাতীয়",
+    price: 60,
+    unit: "কেজি",
+    rating: 4.6,
+    fresh: "অর্গানিক",
+    image: "https://images.unsplash.com/photo-1567375698348-5d9d5ae99de0"
+  },
+  {
+    id: 15,
+    name: "বাঁধাকপি",
+    category: "পাতাজাতীয়",
+    price: 35,
+    unit: "পিস",
+    rating: 4.5,
+    fresh: "তাজা",
+    image: "https://images.unsplash.com/photo-1615485290382-441e4d049cb5"
+  },
+  {
+    id: 16,
+    name: "ফুলকপি",
+    category: "পাতাজাতীয়",
+    price: 40,
+    unit: "পিস",
+    rating: 4.7,
+    fresh: "সাদা ফ্রেশ",
+    image: "https://images.unsplash.com/photo-1510627498534-cf7e9002facc"
+  },
+  {
+    id: 17,
+    name: "পালং শাক",
+    category: "পাতাজাতীয়",
+    price: 20,
+    unit: "বান্ডিল",
+    rating: 4.5,
+    fresh: "সবুজ তাজা",
+    image: "https://images.unsplash.com/photo-1576045057995-568f588f82fb"
+  },
+  {
+    id: 18,
+    name: "ধনেপাতা",
+    category: "পাতাজাতীয়",
+    price: 15,
+    unit: "বান্ডিল",
+    rating: 4.3,
+    fresh: "সুগন্ধি",
+    image: "https://images.unsplash.com/photo-1615485500704-8e990f9900f7"
+  },
+  {
+    id: 19,
+    name: "কাঁচা মরিচ",
+    category: "মসলাজাতীয়",
+    price: 80,
+    unit: "কেজি",
+    rating: 4.8,
+    fresh: "ঝাল ফ্রেশ",
+    image: "https://images.unsplash.com/photo-1588252303782-cb80119abd6d"
+  },
+  {
+    id: 20,
+    name: "রসুন",
+    category: "মসলাজাতীয়",
+    price: 120,
+    unit: "কেজি",
+    rating: 4.9,
+    fresh: "দেশি রসুন",
+    image: "https://images.unsplash.com/photo-1615477550927-6ec8f7b8c95e"
+  }
+];
 ];
 
 const categories = ["সব", "মূলজাতীয়", "পাতাজাতীয়", "ফলজাতীয়", "ফুল/কপি", "মসলা"];
